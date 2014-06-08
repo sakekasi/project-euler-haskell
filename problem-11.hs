@@ -22,7 +22,7 @@ grid = [[08, 02, 22, 97, 38, 15, 00, 40, 00, 75, 04, 05, 07, 78, 52, 12, 50, 77,
 
 
 main :: IO()
-main = print $  foldr (\x y -> if x > y then x else y) 0 
+main = print $ foldr (\x y -> if x > y then x else y) 0 
              $ map (foldr (*) 1) 
              $ [horiz y x | y <- [0 .. 19], x <- [0 .. 16]] 
              ++ [vert y x | y <- [0 .. 16], x <- [0 .. 19]]

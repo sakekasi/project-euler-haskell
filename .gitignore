@@ -218,3 +218,7 @@ pip-log.txt
 *.hi
 *.exe
 *.o
+/problem-18_flymake.hs
+/.#problem-11.hs
+/problem-11
+/problem-18
